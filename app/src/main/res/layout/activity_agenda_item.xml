@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/date"
+            android:text="@string/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignBaseline="@+id/etDate"
+            android:layout_toLeftOf="@+id/etDate"
+            android:layout_toStartOf="@+id/etDate" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="18"
+            android:id="@+id/etDate"
+            android:layout_alignParentTop="true"
+            android:focusableInTouchMode="false"
+            android:layout_toRightOf="@+id/intermediateHymn"
+            android:layout_toEndOf="@+id/intermediateHymn"
+            android:descendantFocusability="blocksDescendants"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/openingHymn"
+            android:id="@+id/openingHymn"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignBaseline="@+id/etOpeningHymn"
+            android:layout_alignRight="@+id/openingPrayer"
+            android:layout_alignEnd="@+id/openingPrayer" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="18"
+            android:id="@+id/etOpeningHymn"
+            android:layout_below="@+id/etDate"
+            android:layout_toRightOf="@+id/intermediateHymn"
+            android:layout_toEndOf="@+id/intermediateHymn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/openingPrayer"
+            android:id="@+id/openingPrayer"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignBaseline="@+id/etOpeningPrayer"
+            android:layout_toLeftOf="@+id/etOpeningHymn"
+            android:layout_toStartOf="@+id/etOpeningHymn" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="18"
+            android:id="@+id/etOpeningPrayer"
+            android:layout_below="@+id/etOpeningHymn"
+            android:layout_toRightOf="@+id/intermediateHymn"
+            android:layout_toEndOf="@+id/intermediateHymn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sacramentHymn"
+            android:id="@+id/sacramentHymn"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignBaseline="@+id/etSacramentHymn"
+            android:layout_toLeftOf="@+id/etOpeningPrayer"
+            android:layout_toStartOf="@+id/etOpeningPrayer" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="18"
+            android:id="@+id/etSacramentHymn"
+            android:layout_below="@+id/etOpeningPrayer"
+            android:layout_alignLeft="@+id/etFirstSpeaker"
+            android:layout_alignStart="@+id/etFirstSpeaker" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/firstSpeaker"
+            android:id="@+id/firstSpeaker"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignBaseline="@+id/etFirstSpeaker"
+            android:layout_alignRight="@+id/date"
+            android:layout_alignEnd="@+id/date" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="18"
+            android:id="@+id/etFirstSpeaker"
+            android:layout_gravity="center"
+            android:layout_below="@+id/etSacramentHymn"
+            android:layout_alignLeft="@+id/etSecondSpeaker"
+            android:layout_alignStart="@+id/etSecondSpeaker" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/secondSpeaker"
+            android:id="@+id/secondSpeaker"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignBaseline="@+id/etSecondSpeaker"
+            android:layout_toLeftOf="@+id/etFirstSpeaker"
+            android:layout_toStartOf="@+id/etFirstSpeaker" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="18"
+            android:id="@+id/etSecondSpeaker"
+            android:layout_below="@+id/etFirstSpeaker"
+            android:layout_toRightOf="@+id/intermediateHymn"
+            android:layout_toEndOf="@+id/intermediateHymn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intermediateHymn"
+            android:id="@+id/intermediateHymn"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignBaseline="@+id/etInterdiateHymn"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="18"
+            android:id="@+id/etInterdiateHymn"
+            android:layout_below="@+id/etSecondSpeaker"
+            android:layout_toRightOf="@+id/intermediateHymn"
+            android:layout_toEndOf="@+id/intermediateHymn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/finalSpeaker"
+            android:id="@+id/finalSpeaker"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignBaseline="@+id/etFinalSpeaker"
+            android:layout_alignRight="@+id/secondSpeaker"
+            android:layout_alignEnd="@+id/secondSpeaker" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="18"
+            android:id="@+id/etFinalSpeaker"
+            android:layout_below="@+id/etInterdiateHymn"
+            android:layout_alignLeft="@+id/etInterdiateHymn"
+            android:layout_alignStart="@+id/etInterdiateHymn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/closingHymn"
+            android:id="@+id/closingHymn"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignBaseline="@+id/etClosingHymn"
+            android:layout_alignRight="@+id/secondSpeaker"
+            android:layout_alignEnd="@+id/secondSpeaker" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="18"
+            android:id="@+id/etClosingHymn"
+            android:layout_below="@+id/etFinalSpeaker"
+            android:layout_alignLeft="@+id/etFinalSpeaker"
+            android:layout_alignStart="@+id/etFinalSpeaker" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/closingPrayer"
+            android:id="@+id/closingPrayer"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignBaseline="@+id/etClosingPrayer"
+            android:layout_alignRight="@+id/secondSpeaker"
+            android:layout_alignEnd="@+id/secondSpeaker" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="18"
+            android:id="@+id/etClosingPrayer"
+            android:layout_below="@+id/etClosingHymn"
+            android:layout_alignLeft="@+id/etClosingHymn"
+            android:layout_alignStart="@+id/etClosingHymn" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saveButton"
+            android:id="@+id/saveAgendaButton"
+            android:layout_below="@+id/etClosingPrayer"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

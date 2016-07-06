@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/date"
+                android:text="@string/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="35sp"
+                android:layout_alignBaseline="@+id/etDate"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="20"
+                android:textSize="35sp"
+                android:id="@+id/etDate"
+                android:descendantFocusability="blocksDescendants"
+                android:focusableInTouchMode="false"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/date"
+                android:layout_toEndOf="@+id/date" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/announcements"
+                android:id="@+id/announcements"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="35sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/etDate" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="20"
+                android:textSize="35sp"
+                android:id="@+id/etAnnoucements"
+                android:gravity="top"
+                android:layout_below="@+id/announcements"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:lines="10"
+                android:linksClickable="false"
+                android:nestedScrollingEnabled="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/saveButton"
+                android:textSize="35sp"
+                android:width="175sp"
+                android:height="90sp"
+                android:id="@+id/saveAnnouncementButton"
+                android:layout_below="@+id/etAnnoucements"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="uk.co.littlehugs.sacramentagenda.MainActivity">
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="60dip"
+                android:id="@+id/agendaImageButton"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/agendaButton"
+                android:scaleType="fitXY"
+                android:background="@drawable/agenda_item_button"
+                />
+
+            <ImageButton
+                android:layout_marginTop="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dip"
+                android:id="@+id/acknowledgementImageButton"
+                android:layout_below="@+id/agendaImageButton"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/acknowledgementsButton"
+                android:scaleType="fitXY"
+                android:background="@drawable/acknowledgement_button"
+                />
+
+            <ImageButton
+                android:layout_marginTop="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dip"
+                android:id="@+id/announcementImageButton"
+                android:layout_below="@+id/acknowledgementImageButton"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/announcementButton"
+                android:scaleType="fitXY"
+                android:background="@drawable/announcements_button"
+                />
+
+            <ImageButton
+                android:layout_marginTop="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dip"
+                android:id="@+id/stakebusinessImageButton"
+                android:layout_below="@+id/announcementImageButton"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/stakebusinessButton"
+                android:scaleType="fitXY"
+                android:background="@drawable/stakebusiness_button"
+                />
+
+            <ImageButton
+                android:layout_marginTop="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dip"
+                android:id="@+id/wardbusinessImageButton"
+                android:layout_below="@+id/stakebusinessImageButton"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/wardbusinessButton"
+                android:scaleType="fitXY"
+                android:background="@drawable/wardbusiness_button"
+                />
+
+            <ImageButton
+                android:layout_marginTop="50sp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dip"
+                android:id="@+id/viewAgendaImageButton"
+                android:layout_below="@+id/wardbusinessImageButton"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/viewAgendaButton"
+                android:scaleType="fitXY"
+                android:background="@drawable/agenda_button"
+                />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

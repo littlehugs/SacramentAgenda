@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uk.co.littlehugs.sacramentagenda">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/agenda_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddWebservice"
+            android:label="@string/add_webservice_name"/>
+        <activity android:name=".DatesActivity"
+            android:label="@string/main_name"/>
+        <activity android:name=".AddAgendaItem"
+            android:label="@string/agenda_item"/>/>
+        <activity android:name=".AddAnnouncementItem"
+            android:label="@string/announcement_item"/>/>
+        <activity android:name=".AddAcknowledgementsItem"
+            android:label="@string/acknowledgement_item"/>/>
+        <activity android:name=".AddStakeBusinessItem"
+            android:label="@string/stakebusiness_item"/>
+        <activity android:name=".AddWardBusinessItem"
+            android:label="@string/wardbusiness_item"/>
+        <activity android:name=".ViewAgendaActivity"
+            android:label="@string/main_name"/>
+        <activity
+            android:name=".AgendaActivity"
+            android:label="@string/title_activity_agenda"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

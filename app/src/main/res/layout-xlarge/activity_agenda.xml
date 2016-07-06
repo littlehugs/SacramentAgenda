@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:id="@+id/agendaText1"
+                android:layout_alignParentTop="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="35sp" />
+
+            <View  android:layout_width="match_parent"
+                android:id="@+id/agendaLine1"
+                android:layout_height="5sp"
+                android:layout_below="@+id/agendaText1"
+                android:background="#0d009e"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:id="@+id/agendaText2"
+                android:layout_below="@+id/agendaLine1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="35sp" />
+
+            <View  android:layout_width="match_parent"
+                android:layout_height="5sp"
+                android:layout_below="@+id/agendaText2"
+                android:id="@+id/agendaLine2"
+                android:background="#0d009e"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:id="@+id/agendaText3"
+                android:layout_below="@+id/agendaLine2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="35sp" />
+
+            <View  android:layout_width="match_parent"
+                android:layout_height="5sp"
+                android:id="@+id/agendaLine3"
+                android:layout_below="@+id/agendaText3"
+                android:background="#0d009e"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:id="@+id/agendaText4"
+                android:layout_below="@+id/agendaLine3"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="35sp" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

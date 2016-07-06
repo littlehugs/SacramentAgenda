@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/date"
+                android:text="@string/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="35sp"
+                android:layout_alignBaseline="@+id/etDate"
+                android:layout_toLeftOf="@+id/etDate"
+                android:layout_toStartOf="@+id/etDate" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="20"
+                android:textSize="35sp"
+                android:id="@+id/etDate"
+                android:layout_alignParentTop="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusableInTouchMode="false"
+                android:layout_toRightOf="@+id/wardBusinessCalling"
+                android:layout_toEndOf="@+id/wardBusinessCalling" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wardBusinessPurpose"
+                android:id="@+id/wardBusinessPurpose"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="35sp"
+                android:layout_below="@+id/etDate"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etWardBusinessPurpose"
+                android:textSize="35sp"
+                android:layout_below="@+id/wardBusinessPurpose" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wardBusinessName"
+                android:id="@+id/wardBusinessName"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="35sp"
+                android:layout_below="@+id/etWardBusinessPurpose"
+                android:layout_alignBaseline="@+id/etWardBusinessName"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="20"
+                android:textSize="35sp"
+                android:id="@+id/etWardBusinessName"
+                android:layout_below="@+id/etWardBusinessPurpose"
+                android:layout_toRightOf="@+id/wardBusinessCalling"
+                android:layout_toEndOf="@+id/wardBusinessCalling"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"  />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wardBusinessCalling"
+                android:id="@+id/wardBusinessCalling"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="35sp"
+                android:layout_below="@+id/etWardBusinessName"
+                android:layout_alignBaseline="@+id/etWardBusinessCalling"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="20"
+                android:textSize="35sp"
+                android:id="@+id/etWardBusinessCalling"
+                android:layout_below="@+id/etWardBusinessName"
+                android:layout_toRightOf="@+id/wardBusinessCalling"
+                android:layout_toEndOf="@+id/wardBusinessCalling"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/saveButton"
+                android:textSize="35sp"
+                android:width="175sp"
+                android:height="90sp"
+                android:id="@+id/saveWardBusinessButton"
+                android:layout_below="@+id/etWardBusinessCalling"
+                android:layout_centerHorizontal="true"  />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

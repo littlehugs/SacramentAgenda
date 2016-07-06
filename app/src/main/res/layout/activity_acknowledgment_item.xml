@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/date"
+                android:text="@string/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignBaseline="@+id/etDate"
+                android:layout_toLeftOf="@+id/etDate"
+                android:layout_toStartOf="@+id/etDate" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="18"
+                android:id="@+id/etDate"
+                android:layout_alignParentTop="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusableInTouchMode="false"
+                android:layout_toRightOf="@+id/acknowledgementStakeCalling3"
+                android:layout_toEndOf="@+id/acknowledgementStakeCalling3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acknowledgementPresiding"
+                android:id="@+id/acknowledgementPresiding"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignBaseline="@+id/etAcknowledgementPresiding"
+                android:layout_toLeftOf="@+id/etAcknowledgementPresiding"
+                android:layout_toStartOf="@+id/etAcknowledgementPresiding"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="18"
+                android:id="@+id/etAcknowledgementPresiding"
+                android:layout_below="@+id/etDate"
+                android:layout_toRightOf="@+id/acknowledgementStakeCalling3"
+                android:layout_toEndOf="@+id/acknowledgementStakeCalling3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acknowledgementConducting"
+                android:id="@+id/acknowledgementConducting"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignBaseline="@+id/etAcknowledgementConducting"
+                android:layout_toLeftOf="@+id/etAcknowledgementConducting"
+                android:layout_toStartOf="@+id/etAcknowledgementConducting"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="18"
+                android:id="@+id/etAcknowledgementConducting"
+                android:layout_below="@+id/etAcknowledgementPresiding"
+                android:layout_toRightOf="@+id/acknowledgementStakeCalling3"
+                android:layout_toEndOf="@+id/acknowledgementStakeCalling3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acknowledgementStakeVisitor"
+                android:id="@+id/acknowledgementStakeVisitor1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignBaseline="@+id/etAcknowledgementStakeVisitor1"
+                android:layout_toLeftOf="@+id/etAcknowledgementStakeVisitor1"
+                android:layout_toStartOf="@+id/etAcknowledgementStakeVisitor1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="18"
+                android:id="@+id/etAcknowledgementStakeVisitor1"
+                android:layout_below="@+id/etAcknowledgementConducting"
+                android:layout_toRightOf="@+id/acknowledgementStakeCalling3"
+                android:layout_toEndOf="@+id/acknowledgementStakeCalling3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acknowledgementStakeCalling"
+                android:id="@+id/acknowledgementStakeCalling1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignBaseline="@+id/etAcknowledgementStakeCalling1"
+                android:layout_toLeftOf="@+id/etAcknowledgementStakeCalling1"
+                android:layout_toStartOf="@+id/etAcknowledgementStakeCalling1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="18"
+                android:id="@+id/etAcknowledgementStakeCalling1"
+                android:layout_below="@+id/etAcknowledgementStakeVisitor1"
+                android:layout_toRightOf="@+id/acknowledgementStakeCalling3"
+                android:layout_toEndOf="@+id/acknowledgementStakeCalling3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acknowledgementStakeVisitor"
+                android:id="@+id/acknowledgementStakeVisitor2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignBaseline="@+id/etAcknowledgementStakeVisitor2"
+                android:layout_toLeftOf="@+id/etAcknowledgementStakeVisitor2"
+                android:layout_toStartOf="@+id/etAcknowledgementStakeVisitor2" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="18"
+                android:id="@+id/etAcknowledgementStakeVisitor2"
+                android:layout_below="@+id/etAcknowledgementStakeCalling1"
+                android:layout_toRightOf="@+id/acknowledgementStakeCalling3"
+                android:layout_toEndOf="@+id/acknowledgementStakeCalling3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acknowledgementStakeCalling"
+                android:id="@+id/acknowledgementStakeCalling2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignBaseline="@+id/etAcknowledgementStakeCalling2"
+                android:layout_toLeftOf="@+id/etAcknowledgementStakeCalling2"
+                android:layout_toStartOf="@+id/etAcknowledgementStakeCalling2" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="18"
+                android:id="@+id/etAcknowledgementStakeCalling2"
+                android:layout_below="@+id/etAcknowledgementStakeVisitor2"
+                android:layout_toRightOf="@+id/acknowledgementStakeCalling3"
+                android:layout_toEndOf="@+id/acknowledgementStakeCalling3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acknowledgementStakeVisitor"
+                android:id="@+id/acknowledgementStakeVisitor3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignBaseline="@+id/etAcknowledgementStakeVisitor3"
+                android:layout_toLeftOf="@+id/etAcknowledgementStakeVisitor3"
+                android:layout_toStartOf="@+id/etAcknowledgementStakeVisitor3" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="18"
+                android:id="@+id/etAcknowledgementStakeVisitor3"
+                android:layout_below="@+id/etAcknowledgementStakeCalling2"
+                android:layout_toRightOf="@+id/acknowledgementStakeCalling3"
+                android:layout_toEndOf="@+id/acknowledgementStakeCalling3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acknowledgementStakeCalling"
+                android:id="@+id/acknowledgementStakeCalling3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignBaseline="@+id/etAcknowledgementStakeCalling3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="18"
+                android:id="@+id/etAcknowledgementStakeCalling3"
+                android:layout_below="@+id/etAcknowledgementStakeVisitor3"
+                android:layout_toRightOf="@+id/acknowledgementStakeCalling3"
+                android:layout_toEndOf="@+id/acknowledgementStakeCalling3" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/saveButton"
+                android:id="@+id/saveAcknowledgementsButton"
+                android:layout_below="@+id/etAcknowledgementStakeCalling3"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
